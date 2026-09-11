@@ -1,0 +1,14 @@
+{
+  "semanticInput": {
+    "name": "evo-semantic",
+    "version": "1.0.0"
+  },
+  "interactionOutput": {
+    "name": "uidl",
+    "version": "0.1.0",
+    "schemaSha256": "c7e8f92e66bb4e3399aaa67271c7d0fb4ad5db8b958ada071eb65fc3fdabc092"
+  },
+  "compatibility": {
+    "eidos": "uidl >=0.1.0 <0.2.0"
+  }
+}
