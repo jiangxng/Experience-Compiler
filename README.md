@@ -1,31 +1,67 @@
-# Experience Compiler
+# EC Enterprise Intelligence Platform
 
-**Milestone:** EC-M0 — Contract & Form Compilation Foundation  
-**Status:** runnable foundation  
-**UIDL contract:** 0.1.0 (`sha256:c7e8f92e66bb4e3399aaa67271c7d0fb4ad5db8b958ada071eb65fc3fdabc092`)
+EC is a **persistent enterprise intelligence system** designed to survive model changes, infrastructure changes, and decades of operation.
 
-Experience Compiler is the semantic-to-interaction compiler between enterprise systems and experience runtimes.
-Its first upstream integration target is **EVO — Enterprise Operating System**. Its first downstream runtime target is **Eidos**.
+It is not a chatbot, not a vector database, not a UI compiler, and not a single-agent framework.
 
-It does **not** own enterprise truth, execute EVO Commands, or render UI. It compiles a versioned semantic snapshot into a deterministic, versioned interaction document (UIDL).
+## Canonical responsibility split
 
-## Start here for humans and LLMs
-Read in order:
-1. `PHILOSOPHY.md`
-2. `CONCEPTS.md`
-3. `INVARIANTS.md`
-4. `ARCHITECTURE.md`
-5. `PUBLIC-API.md`
-6. `LLM.md`
-7. `context.manifest.json`
-8. `docs/integration/EVO.md`
-9. `docs/integration/EIDOS.md`
-10. relevant source + tests
+- **EVO** owns enterprise truth, transactions, commands, and execution.
+- **EC** owns persistent knowledge, memory, learning methods, context compilation, research, reasoning orchestration, and experience planning.
+- **Eidos** owns deterministic experience capabilities, validation, runtime realization, and renderers.
+- **LLMs** are replaceable reasoning processors.
 
-## Quick validation
+## What this v0.1 package is
+
+This repository is the first long-lived architecture seed for the new EC. It contains:
+
+- executable reference core with no mandatory third-party runtime dependency;
+- canonical knowledge / case / decision / outcome / lesson / pattern models;
+- temporal validity, provenance, scope, confidence, and supersession;
+- versioned Learning Strategy Registry;
+- LLM Bootstrap and Context Compiler;
+- adaptive reasoning budget model;
+- model capability registry and model-independent routing;
+- external research acquisition boundary;
+- EVO and Eidos integration contracts;
+- Industry Pack format and manufacturing seed pack;
+- in-memory reference persistence plus PostgreSQL schema and scale-out adapters;
+- local deployment configuration and production technology route;
+- tests, validation scripts, operations, backup, DR, migration, observability and hardware guidance.
+
+## Fastest possible start
+
+Requires Python 3.12+ only.
+
 ```bash
-npm run build
-npm test
-npm run example
+python -m unittest discover -s tests -v
+PYTHONPATH=src python -m ec demo-manufacturing
+PYTHONPATH=src python -m ec doctor
 ```
-No runtime npm dependencies are required for M0.
+
+For a local editable install:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+ec doctor
+ec demo-manufacturing
+```
+
+## Read first
+
+1. `docs/00-START-HERE.md`
+2. `CONSTITUTION.md`
+3. `ARCHITECTURE.md`
+4. `docs/10-DATA-AND-SCALE.md`
+5. `docs/20-HARDWARE-AND-CAPACITY.md`
+6. `docs/30-EVO-INTEGRATION.md`
+7. `docs/31-EIDOS-INTEGRATION.md`
+8. `docs/40-LLM-REPLACEMENT.md`
+9. `docs/50-ACTIVE-LEARNING-AND-RESEARCH.md`
+10. `docs/90-TWENTY-YEAR-ROADMAP.md`
+
+## Important
+
+The reference implementations in `src/ec/storage/memory.py` are intentionally not production persistence. They make semantics testable before a database choice becomes architectural debt. Production data-plane choices are adapters and projections, not the owner of EC semantics.

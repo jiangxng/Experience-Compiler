@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ec:context-pack:0.1.0",
+  "type": "object",
+  "required": [
+    "requestId",
+    "task",
+    "role",
+    "domain",
+    "items",
+    "invariants"
+  ],
+  "properties": {
+    "requestId": {
+      "type": "string"
+    },
+    "task": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array"
+    },
+    "invariants": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

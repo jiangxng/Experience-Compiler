@@ -1,0 +1,14 @@
+{
+  "task": "delivery-risk-decision",
+  "capabilityIntent": [
+    "exception-queue",
+    "decision-panel",
+    "evidence-stack",
+    "impact-preview",
+    "timeline"
+  ],
+  "principles": [
+    "decision evidence must remain visible",
+    "risk and financial impact must not be hidden by personalization"
+  ]
+}

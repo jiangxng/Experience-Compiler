@@ -1,0 +1,31 @@
+{
+  "pattern": "material-shortage",
+  "signals": [
+    "supplier ETA later than need date",
+    "safety stock breach",
+    "customer promise risk"
+  ],
+  "options": [
+    "wait",
+    "expedite",
+    "alternate supplier",
+    "substitute material",
+    "split shipment",
+    "replan production"
+  ],
+  "evidenceRequired": [
+    "inventory",
+    "ETA",
+    "supplier performance",
+    "margin",
+    "customer priority",
+    "quality constraints"
+  ],
+  "outcomesToObserve": [
+    "on-time delivery",
+    "incremental cost",
+    "quality impact",
+    "line impact",
+    "customer impact"
+  ]
+}

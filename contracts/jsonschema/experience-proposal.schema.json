@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ec:experience-proposal:0.1.0",
+  "type": "object",
+  "required": [
+    "contractVersion",
+    "proposalId",
+    "experienceId",
+    "regions",
+    "standardFallbackRef"
+  ],
+  "properties": {
+    "contractVersion": {
+      "const": "0.1.0"
+    },
+    "proposalId": {
+      "type": "string"
+    },
+    "experienceId": {
+      "type": "string"
+    },
+    "regions": {
+      "type": "array"
+    },
+    "standardFallbackRef": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

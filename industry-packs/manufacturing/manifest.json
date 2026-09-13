@@ -1,0 +1,26 @@
+{
+  "packId": "ec.industry.manufacturing",
+  "version": "0.1.0",
+  "industry": "manufacturing",
+  "subindustry": null,
+  "ontologyRefs": [
+    "ontology/core.json"
+  ],
+  "knowledgeRefs": [
+    "knowledge/seed.jsonl"
+  ],
+  "processRefs": [
+    "processes/order-to-delivery.md"
+  ],
+  "decisionPatternRefs": [
+    "decisions/material-shortage.json"
+  ],
+  "experiencePatternRefs": [
+    "experience/delivery-risk.json"
+  ],
+  "demoScenarioRefs": [
+    "demos/strategic-order-shortage.json"
+  ],
+  "licenseClass": "project-owned-seed",
+  "provenancePolicy": "all-imported-knowledge-requires-source-record"
+}

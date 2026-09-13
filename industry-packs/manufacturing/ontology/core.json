@@ -1,0 +1,20 @@
+{
+  "entities": [
+    "Customer",
+    "SalesOrder",
+    "Material",
+    "Supplier",
+    "InventoryPosition",
+    "ProductionOrder",
+    "ProductionLine",
+    "Shipment"
+  ],
+  "relations": [
+    "requires",
+    "suppliedBy",
+    "allocatedTo",
+    "producedOn",
+    "fulfills",
+    "deliveredBy"
+  ]
+}

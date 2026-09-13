@@ -1,0 +1,35 @@
+[ec]
+environment = "development"
+node_id = "ec-dev-1"
+default_tenant_isolation = "strict"
+
+[canonical_store]
+driver = "memory" # production: postgres adapter
+
+[evidence_archive]
+driver = "filesystem" # production: s3-compatible adapter
+path = "runtime-data/evidence"
+
+[context]
+default_mode = "deep"
+max_context_items = 100
+allow_adaptive_token_budget = true
+
+[research]
+enabled = false
+respect_robots = true
+require_https = true
+store_raw_evidence = true
+promotion_mode = "candidate-only"
+
+[models]
+default_policy = "capability-first"
+allow_unregistered_models = false
+
+[integration.evo]
+enabled = false
+base_url = "http://evo.local"
+
+[integration.eidos]
+enabled = false
+base_url = "http://eidos.local"

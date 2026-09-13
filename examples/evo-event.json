@@ -1,0 +1,18 @@
+{
+  "eventId": "0199-demo",
+  "eventType": "sales-order.approved",
+  "eventVersion": "1.0.0",
+  "occurredAt": "2026-09-13T10:00:00Z",
+  "tenantId": "tenant-demo",
+  "actor": "user:planner",
+  "subject": {
+    "entityType": "SalesOrder",
+    "entityId": "SO-20260913-0182",
+    "version": "1"
+  },
+  "payload": {
+    "amount": 280000,
+    "currency": "USD"
+  },
+  "traceId": "trace-demo"
+}
