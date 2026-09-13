@@ -1,0 +1,74 @@
+{
+  "version": "1.0.0",
+  "playbooks": [
+    {
+      "scenario": "critical-material-shortage",
+      "questions": [
+        "Which orders consume the material?",
+        "What is net available inventory?",
+        "When is replenishment truly available?",
+        "Are alternates qualified?",
+        "Which promises/revenue are at risk?"
+      ],
+      "authorization": [
+        "supplier change",
+        "material substitution",
+        "customer promise change"
+      ]
+    },
+    {
+      "scenario": "capacity-overload",
+      "questions": [
+        "Which work center is constrained?",
+        "Is overload temporary?",
+        "What alternate routing exists?",
+        "What orders have strategic priority?"
+      ],
+      "authorization": [
+        "overtime",
+        "subcontract",
+        "schedule reprioritization"
+      ]
+    },
+    {
+      "scenario": "quality-hold",
+      "questions": [
+        "What lots/genealogy are affected?",
+        "Is containment complete?",
+        "What disposition authority is required?",
+        "What customer exposure exists?"
+      ],
+      "authorization": [
+        "deviation release",
+        "scrap",
+        "customer notification"
+      ]
+    },
+    {
+      "scenario": "machine-downtime-risk",
+      "questions": [
+        "What failure mode is indicated?",
+        "What production is exposed?",
+        "What safe operating window remains?",
+        "Are spares/skills available?"
+      ],
+      "authorization": [
+        "defer maintenance",
+        "production stop"
+      ]
+    },
+    {
+      "scenario": "fulfillment-allocation",
+      "questions": [
+        "What inventory is truly allocatable?",
+        "Which promises/penalties are exposed?",
+        "What customer tiers apply?",
+        "Can supply be recovered before promise?"
+      ],
+      "authorization": [
+        "strategic allocation override",
+        "promise change"
+      ]
+    }
+  ]
+}

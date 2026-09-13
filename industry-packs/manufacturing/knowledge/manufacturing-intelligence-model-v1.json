@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "semantic_domains": {
+    "demand": [
+      "forecast",
+      "sales-order",
+      "customer-priority",
+      "promise-date",
+      "allocation"
+    ],
+    "materials": [
+      "BOM",
+      "substitution",
+      "shortage",
+      "safety-stock",
+      "lead-time"
+    ],
+    "supply": [
+      "supplier",
+      "purchase-order",
+      "confirmation",
+      "OTD",
+      "qualification",
+      "expedite"
+    ],
+    "production": [
+      "routing",
+      "work-center",
+      "capacity",
+      "schedule",
+      "WIP",
+      "yield",
+      "constraint"
+    ],
+    "quality": [
+      "specification",
+      "inspection",
+      "nonconformance",
+      "containment",
+      "disposition",
+      "traceability"
+    ],
+    "maintenance": [
+      "asset",
+      "condition",
+      "failure-mode",
+      "work-order",
+      "spares",
+      "downtime"
+    ],
+    "fulfillment": [
+      "available-to-promise",
+      "shipment",
+      "OTIF",
+      "penalty",
+      "customer-impact"
+    ],
+    "economics": [
+      "material-cost",
+      "conversion-cost",
+      "expedite-cost",
+      "margin",
+      "working-capital",
+      "revenue-risk"
+    ]
+  },
+  "reasoning_obligations": [
+    "identify business objective",
+    "identify hard constraints",
+    "show evidence and missing evidence",
+    "compare alternatives",
+    "quantify impact where evidence supports it",
+    "identify authorization needs",
+    "preserve uncertainty",
+    "observe outcome"
+  ]
+}

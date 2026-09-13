@@ -1,4 +1,4 @@
-# EC v0.9 — End-to-End Intelligence Reference Lifecycle
+# EC v1.0 — Manufacturing Intelligence Reference System
 
 **Release status:** executable reference system; v0.8/v0.9 integration preview.
 
