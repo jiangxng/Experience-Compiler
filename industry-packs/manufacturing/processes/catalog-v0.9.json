@@ -1,0 +1,67 @@
+{
+  "version": "0.9.0",
+  "processes": [
+    {
+      "id": "order-to-delivery",
+      "stages": [
+        "demand",
+        "promise",
+        "material-plan",
+        "production-plan",
+        "execute",
+        "quality",
+        "ship",
+        "outcome"
+      ]
+    },
+    {
+      "id": "procure-to-availability",
+      "stages": [
+        "requirement",
+        "source",
+        "order",
+        "confirm",
+        "receive",
+        "inspect",
+        "available"
+      ]
+    },
+    {
+      "id": "plan-to-produce",
+      "stages": [
+        "demand",
+        "MPS",
+        "MRP",
+        "schedule",
+        "release",
+        "execute",
+        "report",
+        "close"
+      ]
+    },
+    {
+      "id": "quality-exception",
+      "stages": [
+        "detect",
+        "contain",
+        "investigate",
+        "decide",
+        "disposition",
+        "verify",
+        "learn"
+      ]
+    },
+    {
+      "id": "maintenance-exception",
+      "stages": [
+        "detect",
+        "assess",
+        "plan",
+        "authorize",
+        "execute",
+        "verify",
+        "learn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "version": "0.9.0",
+  "scenarios": [
+    {
+      "id": "critical-material-shortage",
+      "signals": [
+        "supplier-delay",
+        "inventory-shortfall",
+        "customer-promise"
+      ],
+      "decisions": [
+        "expedite",
+        "alternate-supplier",
+        "substitute",
+        "reschedule"
+      ],
+      "evidence": [
+        "BOM",
+        "inventory",
+        "PO",
+        "supplier-OTD",
+        "order-priority"
+      ],
+      "outcomes": [
+        "OTIF",
+        "margin",
+        "quality-risk"
+      ]
+    },
+    {
+      "id": "capacity-overload",
+      "signals": [
+        "load>capacity",
+        "schedule-risk"
+      ],
+      "decisions": [
+        "overtime",
+        "alternate-work-center",
+        "subcontract",
+        "reprioritize"
+      ],
+      "evidence": [
+        "routing",
+        "capacity-calendar",
+        "WIP",
+        "labor",
+        "promise-date"
+      ],
+      "outcomes": [
+        "throughput",
+        "cost",
+        "OTIF"
+      ]
+    },
+    {
+      "id": "quality-hold",
+      "signals": [
+        "nonconformance",
+        "yield-drop"
+      ],
+      "decisions": [
+        "hold",
+        "sort",
+        "rework",
+        "scrap",
+        "deviation-release"
+      ],
+      "evidence": [
+        "inspection",
+        "lot-genealogy",
+        "specification",
+        "customer-risk"
+      ],
+      "outcomes": [
+        "FPY",
+        "scrap",
+        "lead-time",
+        "customer-escape"
+      ]
+    },
+    {
+      "id": "machine-downtime-risk",
+      "signals": [
+        "condition-alert",
+        "failure-history"
+      ],
+      "decisions": [
+        "stop-now",
+        "planned-window",
+        "defer-monitor"
+      ],
+      "evidence": [
+        "condition",
+        "maintenance-history",
+        "production-load",
+        "spares"
+      ],
+      "outcomes": [
+        "downtime",
+        "OEE",
+        "safety",
+        "maintenance-cost"
+      ]
+    },
+    {
+      "id": "fulfillment-allocation",
+      "signals": [
+        "scarce-stock",
+        "competing-orders"
+      ],
+      "decisions": [
+        "strategic-priority",
+        "promise-date",
+        "margin",
+        "FIFO",
+        "manual-exception"
+      ],
+      "evidence": [
+        "customer-tier",
+        "promise",
+        "margin",
+        "inventory",
+        "penalty"
+      ],
+      "outcomes": [
+        "OTIF",
+        "revenue",
+        "customer-impact"
+      ]
+    }
+  ]
+}
