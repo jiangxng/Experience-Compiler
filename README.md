@@ -1,3 +1,13 @@
+# EC v0.7 — Persistent Intelligence & Learning Reference System
+
+**Release status:** executable reference system; v0.8/v0.9 integration preview.
+
+This release advances the First-Principles EC platform from architecture seed to an executable
+persistence → retrieval → context → model → research → learning reference loop.
+
+Start with `docs/00-START-HERE.md`, then `docs/04-V0.7-REFERENCE-SYSTEM.md` and
+`docs/05-RELEASE-MATURITY.md`.
+
 # EC Enterprise Intelligence Platform
 
 EC is a **persistent enterprise intelligence system** designed to survive model changes, infrastructure changes, and decades of operation.
