@@ -1,4 +1,4 @@
-# EC v0.7 — Persistent Intelligence & Learning Reference System
+# EC v0.8 — Integration & Intelligence Runtime
 
 **Release status:** executable reference system; v0.8/v0.9 integration preview.
 

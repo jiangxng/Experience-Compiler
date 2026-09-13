@@ -1,0 +1,15 @@
+{
+  "version": "0.8.0",
+  "exceptions": [
+    "critical-material-shortage",
+    "supplier-delay",
+    "capacity-overload",
+    "machine-downtime",
+    "quality-hold",
+    "yield-collapse",
+    "inventory-mismatch",
+    "promise-risk",
+    "shipment-delay",
+    "cost-variance"
+  ]
+}

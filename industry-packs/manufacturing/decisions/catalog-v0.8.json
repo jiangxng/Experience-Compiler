@@ -1,0 +1,81 @@
+{
+  "version": "0.8.0",
+  "families": [
+    {
+      "id": "material-shortage",
+      "options": [
+        "expedite",
+        "alternate-supplier",
+        "substitute-material",
+        "reschedule",
+        "reallocate-stock"
+      ],
+      "impact": [
+        "OTIF",
+        "margin",
+        "quality-risk",
+        "working-capital"
+      ]
+    },
+    {
+      "id": "capacity-overload",
+      "options": [
+        "overtime",
+        "alternate-work-center",
+        "subcontract",
+        "reschedule",
+        "reprioritize"
+      ],
+      "impact": [
+        "throughput",
+        "labor-cost",
+        "promise-risk"
+      ]
+    },
+    {
+      "id": "quality-containment",
+      "options": [
+        "hold",
+        "sort",
+        "rework",
+        "scrap",
+        "deviation-release"
+      ],
+      "impact": [
+        "customer-risk",
+        "yield",
+        "cost",
+        "lead-time"
+      ]
+    },
+    {
+      "id": "maintenance-timing",
+      "options": [
+        "stop-now",
+        "planned-window",
+        "defer-with-monitoring"
+      ],
+      "impact": [
+        "downtime-risk",
+        "throughput",
+        "safety",
+        "maintenance-cost"
+      ]
+    },
+    {
+      "id": "order-allocation",
+      "options": [
+        "priority-customer",
+        "margin-priority",
+        "FIFO",
+        "promise-date",
+        "manual-exception"
+      ],
+      "impact": [
+        "OTIF",
+        "revenue-risk",
+        "customer-strategy"
+      ]
+    }
+  ]
+}

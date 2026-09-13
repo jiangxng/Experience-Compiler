@@ -1,0 +1,60 @@
+{
+  "version": "0.8.0",
+  "entities": [
+    "Customer",
+    "SalesOrder",
+    "Demand",
+    "Material",
+    "BOM",
+    "Routing",
+    "Supplier",
+    "PurchaseOrder",
+    "InventoryPosition",
+    "Warehouse",
+    "ProductionOrder",
+    "WorkCenter",
+    "ProductionLine",
+    "Operation",
+    "WIP",
+    "QualityLot",
+    "Nonconformance",
+    "MaintenanceWorkOrder",
+    "Machine",
+    "Shipment",
+    "Invoice",
+    "CostObject"
+  ],
+  "relations": [
+    "requires",
+    "suppliedBy",
+    "allocatedTo",
+    "contains",
+    "followsRouting",
+    "scheduledOn",
+    "producedOn",
+    "consumes",
+    "produces",
+    "blockedBy",
+    "substitutableBy",
+    "inspectedBy",
+    "affectedBy",
+    "fulfills",
+    "deliveredBy",
+    "incursCost",
+    "constrains"
+  ],
+  "decision_objects": [
+    "MaterialShortageDecision",
+    "CapacityAllocationDecision",
+    "QualityContainmentDecision",
+    "MaintenanceTimingDecision",
+    "SupplierEscalationDecision",
+    "OrderPromiseDecision"
+  ],
+  "invariants": [
+    "business truth comes from EVO",
+    "EC recommendations are not execution",
+    "decision outcomes feed learning",
+    "material claims retain provenance"
+  ]
+}

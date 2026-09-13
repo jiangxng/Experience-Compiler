@@ -1,0 +1,45 @@
+{
+  "version": "0.8.0",
+  "kpis": [
+    {
+      "id": "otif",
+      "name": "On Time In Full",
+      "decision_use": "customer promise and fulfillment risk"
+    },
+    {
+      "id": "oee",
+      "name": "Overall Equipment Effectiveness",
+      "decision_use": "capacity/downtime diagnosis"
+    },
+    {
+      "id": "schedule-attainment",
+      "name": "Schedule Attainment",
+      "decision_use": "production execution"
+    },
+    {
+      "id": "first-pass-yield",
+      "name": "First Pass Yield",
+      "decision_use": "quality/yield"
+    },
+    {
+      "id": "inventory-turns",
+      "name": "Inventory Turns",
+      "decision_use": "working capital"
+    },
+    {
+      "id": "supplier-otd",
+      "name": "Supplier On-Time Delivery",
+      "decision_use": "supplier risk"
+    },
+    {
+      "id": "scrap-rate",
+      "name": "Scrap Rate",
+      "decision_use": "quality/cost"
+    },
+    {
+      "id": "cash-conversion-cycle",
+      "name": "Cash Conversion Cycle",
+      "decision_use": "working capital"
+    }
+  ]
+}
