@@ -17,6 +17,24 @@ class SqliteKnowledgeRepository:
           actor_type TEXT NOT NULL, actor_id TEXT NOT NULL, method TEXT NOT NULL, run_id TEXT NOT NULL)""")
         self.db.execute("CREATE INDEX IF NOT EXISTS ix_knowledge_tenant_subject ON knowledge(tenant_id,subject)")
         self.db.commit()
+
+    def close(self) -> None:
+        """Release the SQLite handle deterministically.
+
+        This is required on Windows before deleting/moving the database file.
+        Calling close() more than once is safe.
+        """
+        db = getattr(self, "db", None)
+        if db is not None:
+            db.close()
+            self.db = None
+
+    def __enter__(self) -> "SqliteKnowledgeRepository":
+        return self
+
+    def __exit__(self, exc_type, exc, tb) -> None:
+        self.close()
+
     def append(self,r:KnowledgeRecord)->None:
         self.db.execute("INSERT INTO knowledge VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(
           r.record_id,r.kind.value,r.subject,r.predicate,json.dumps(r.value,ensure_ascii=False),

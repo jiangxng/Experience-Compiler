@@ -1,4 +1,9 @@
-# EC v1.0 — Manufacturing Intelligence Reference System
+
+> **Windows v1.0.1 quick start:** install Python 3.12 or 3.13, then double-click `START-EC-V1.0.1-WINDOWS.bat`.
+> This patch fixes deterministic SQLite handle release required by Windows temporary-file cleanup.
+> See `WINDOWS-ONE-CLICK-DEPLOYMENT.md`.
+
+# EC v1.0.1 — Manufacturing Intelligence Reference System
 
 **Release status:** executable reference system; v0.8/v0.9 integration preview.
 
