@@ -1,4 +1,3 @@
-
 > **Windows v1.0.1 quick start:** install Python 3.12 or 3.13, then double-click `START-EC-V1.0.1-WINDOWS.bat`.
 > This patch fixes deterministic SQLite handle release required by Windows temporary-file cleanup.
 > See `WINDOWS-ONE-CLICK-DEPLOYMENT.md`.
@@ -13,18 +12,37 @@ persistence → retrieval → context → model → research → learning refere
 Start with `docs/00-START-HERE.md`, then `docs/04-V0.7-REFERENCE-SYSTEM.md` and
 `docs/05-RELEASE-MATURITY.md`.
 
-# EC Enterprise Intelligence Platform
+# EC Enterprise Advisory Intelligence Platform
 
-EC is a **persistent enterprise intelligence system** designed to survive model changes, infrastructure changes, and decades of operation.
+EC is the **persistent knowledge, memory, learning and advisory substrate for an enterprise consulting capability** designed to survive model changes, infrastructure changes, and decades of operation.
 
-It is not a chatbot, not a vector database, not a UI compiler, and not a single-agent framework.
+LLMs operating with EC are replaceable reasoning engines. Together, EC + LLM may provide management, strategy, business/process, finance, supply-chain, manufacturing/operations, quality, IT, data, security, implementation, operations/maintenance and other specialist consulting capabilities.
+
+EC is **not** a virtual CEO/CIO/CTO, not enterprise management authority, not a source of operational truth, and not an automatic decision or execution authority. It is also not a chatbot, vector database, UI compiler, or single-agent framework.
+
+## Lifecycle role
+
+During initial enterprise-system establishment, EC primarily serves as an **implementation consulting capability**: understand the enterprise, compile/propose governed definitions and packages, help validate/configure/migrate/test/train/go-live, and identify gaps.
+
+After go-live, EC primarily serves as an **ongoing advisory and operations/maintenance consulting capability**: observe governed enterprise information, diagnose, recommend, research, preserve experience, propose governed improvements, and assist business and IT operations.
+
+## Runtime independence
+
+**EVO + Eidos are the deterministic enterprise information system and must continue to operate normally without EC or any LLM.**
+
+EC augments that system with advisory intelligence. If EC or its LLMs are unavailable, already-published enterprise definitions, authorized commands, business execution, governed facts and deterministic human interaction continue to work. What is lost or degraded is consulting intelligence: diagnosis, recommendation, research, learning and continuous-improvement assistance.
 
 ## Canonical responsibility split
 
-- **EVO** owns enterprise truth, transactions, commands, and execution.
-- **EC** owns persistent knowledge, memory, learning methods, context compilation, research, reasoning orchestration, and experience planning.
-- **Eidos** owns deterministic experience capabilities, validation, runtime realization, and renderers.
-- **LLMs** are replaceable reasoning processors.
+- **EVO** owns enterprise truth, transactions, commands, authorization and deterministic execution.
+- **EC** owns persistent knowledge, memory, learning methods, context compilation, research, reasoning orchestration, diagnosis, recommendation and governed proposals.
+- **Eidos** owns deterministic experience capabilities, validation, runtime realization and renderers.
+- **LLMs** are replaceable reasoning processors; project/development LLMs are not customer runtime participants.
+- **Humans / governed policies** retain enterprise decision, approval and delegation authority.
+
+Canonical loop:
+
+`Observation/Evidence → Analysis/Diagnosis → Recommendation/Proposal → Human/Policy Decision → Validation/Authorization → EVO Execution → Outcome → EC Learning`
 
 ## What this v0.1 package is
 
