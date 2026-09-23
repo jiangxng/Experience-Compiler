@@ -1,3 +1,5 @@
+> **Architecture transition (2026-09-23):** The target product identity has changed from **Experience Compiler (EC)** to **Enterprise Agent**, a durable LLM Agent package. Historical EC releases and assets are preserved. See `docs/adr/0004-ec-to-enterprise-agent.md`.
+
 > **Windows v1.0.1 quick start:** install Python 3.12 or 3.13, then double-click `START-EC-V1.0.1-WINDOWS.bat`.
 > This patch fixes deterministic SQLite handle release required by Windows temporary-file cleanup.
 > See `WINDOWS-ONE-CLICK-DEPLOYMENT.md`.
