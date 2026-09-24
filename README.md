@@ -38,15 +38,16 @@ EC augments that system with advisory intelligence. If EC or its LLMs are unavai
 
 ## Canonical responsibility split
 
-- **EVO** owns enterprise truth, transactions, commands, authorization and deterministic execution.
-- **EC** owns persistent knowledge, memory, learning methods, context compilation, research, reasoning orchestration, diagnosis, recommendation and governed proposals.
-- **Eidos** owns deterministic experience capabilities, validation, runtime realization and renderers.
+- **EVO App Platform / Host** owns package lifecycle, provider resolution, identity/authentication/session integration, authorization orchestration, enterprise context and governed admission of actions through public contracts.
+- **EVO Ledger Runtime** owns deterministic BusinessData → Posting → LedgerEntry/Balance execution, replay/recalculation and related ledger-runtime query/export behavior. It is not the owner of identity, authorization policy, package lifecycle or Agent/provider configuration.
+- **EC / Enterprise Agent** owns persistent knowledge, memory, learning methods, context compilation, research, reasoning orchestration, diagnosis, recommendation and governed proposals.
+- **Eidos** owns deterministic human experience capabilities, validation, rendering and interaction contracts; it does not own business authorization or ledger execution.
 - **LLMs** are replaceable reasoning processors; project/development LLMs are not customer runtime participants.
 - **Humans / governed policies** retain enterprise decision, approval and delegation authority.
 
 Canonical loop:
 
-`Observation/Evidence → Analysis/Diagnosis → Recommendation/Proposal → Human/Policy Decision → Validation/Authorization → EVO Execution → Outcome → EC Learning`
+`Observation/Evidence → Analysis/Diagnosis → Recommendation/Proposal → Human/Policy Decision → App Platform Governance/Admission → Deterministic Runtime Execution (including EVO Ledger Runtime where applicable) → Outcome → EC Learning`
 
 ## What this v0.1 package is
 
