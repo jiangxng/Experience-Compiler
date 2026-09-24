@@ -34,3 +34,6 @@ These rules outrank implementation convenience.
 `Observation/Evidence -> Analysis/Diagnosis -> Recommendation/Proposal -> Human/Policy Decision -> Validation/Authorization -> EVO Execution -> Outcome -> EC Learning`
 
 No recommendation, learned belief, model output or consultant opinion becomes operational truth merely because EC produced it.
+27. **Package lifecycle belongs to EVO App Platform.** The target Enterprise Agent is installed/disabled/upgraded/uninstalled as an App Platform AGENT Package while this repository remains authoritative for durable intelligence semantics and retained EC assets.
+28. **Pluginization does not mean repository flattening.** Do not bulk-copy EC implementation into App Platform; converge through versioned public contracts and deployable adapters.
+29. **LLM providers are replaceable platform dependencies.** Enterprise Agent reasoning consumes a public `llm.inference` capability; no specific model vendor is part of the Agent's durable identity.
