@@ -124,3 +124,23 @@ Developer laptop
 ```
 
 No upper layer imports a vendor-specific database SDK directly. Vendor adapters live below ports.
+
+
+## App Platform package boundary
+
+EC repository topology and Enterprise Agent package topology are intentionally separate.
+
+```text
+jiangxng/Experience-Compiler
+  durable intelligence assets + services
+              │
+              │ versioned public contracts
+              ▼
+EVO App Platform
+  enterprise-agent AGENT Package
+  lifecycle / Eidos Experience / tool boundary / Provider resolution
+```
+
+The host-side TypeScript `agents/enterprise-agent` runtime is retained as an integration asset. It does not replace EC knowledge, memory, learning, research or Context Compiler semantics.
+
+Model vendor adapters are not package identity. Target model access is resolved through the App Platform `llm.inference` Provider capability.
