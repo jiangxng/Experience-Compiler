@@ -4,12 +4,12 @@ These rules outrank implementation convenience.
 
 1. **Persistent intelligence belongs to EC, not to an LLM.**
 2. **EC + its LLM(s) form an enterprise advisory and consulting capability.** They may specialize as management, strategy, business/process, finance, supply-chain, manufacturing/operations, quality, IT, data, security, implementation, operations/maintenance and other consultants. They are not enterprise executives or management authority.
-3. **Advisory capability does not imply decision, approval or execution authority.** EC may observe, analyze, diagnose, research, forecast, simulate, recommend and propose. Authorized humans/policies decide; EVO validates, authorizes and executes governed business effects.
+3. **Advisory capability does not imply decision, approval or execution authority.** EC may observe, analyze, diagnose, research, forecast, simulate, recommend and propose. Authorized humans/policies decide. EVO App Platform/Host performs governed admission and authorization orchestration through public capabilities; deterministic runtimes execute only their owned effects. EVO Ledger Runtime specifically owns deterministic posting/ledger effects, not general platform authorization.
 4. **EC is an augmentation layer, not a runtime prerequisite.** EVO + Eidos must remain fully operable when EC and every LLM are absent or unavailable. Loss of EC may degrade advisory, diagnosis, research, recommendation, learning and improvement, but must not corrupt or invalidate already-published deterministic enterprise operation.
 5. **During initial system establishment, EC primarily acts as an implementation consultant.** It understands the enterprise, consumes public contracts, compiles/proposes governed enterprise definitions/packages and experience intent, and assists validation, configuration, migration, testing, training and go-live.
 6. **After go-live, EC primarily acts as an ongoing advisory and operations/maintenance consultant.** It observes governed enterprise information, diagnoses, recommends, researches, maintains knowledge, proposes governed changes, supports continuous improvement and assists business/IT operations.
 7. **Knowledge is larger than any context window.** Context must be compiled, not dumped.
-8. **EVO owns business truth and execution. EC never silently mutates enterprise truth.**
+8. **EC never silently mutates enterprise truth.** Enterprise operational authority is split by public ownership boundaries: App Platform/Host governs composition/admission and deterministic runtimes own their declared state/effects. EVO Ledger Runtime owns ledger-runtime truth/effects only.
 9. **Eidos owns deterministic experience realization. EC proposes; Eidos validates and realizes.**
 10. **Models are replaceable.** No critical knowledge, learning method, identity, or policy may exist only inside one model provider.
 11. **Project/development LLMs are not customer runtime participants.** EVO/Eidos owner LLMs are engineering actors; EC's LLM is a replaceable consulting/reasoning engine. Deterministic runtime must not depend on any project-owner LLM being present.
@@ -31,7 +31,7 @@ These rules outrank implementation convenience.
 
 ## Core governance loop
 
-`Observation/Evidence -> Analysis/Diagnosis -> Recommendation/Proposal -> Human/Policy Decision -> Validation/Authorization -> EVO Execution -> Outcome -> EC Learning`
+`Observation/Evidence -> Analysis/Diagnosis -> Recommendation/Proposal -> Human/Policy Decision -> App Platform Governance/Admission -> Deterministic Runtime Execution -> Outcome -> EC Learning`
 
 No recommendation, learned belief, model output or consultant opinion becomes operational truth merely because EC produced it.
 27. **Package lifecycle belongs to EVO App Platform.** The target Enterprise Agent is installed/disabled/upgraded/uninstalled as an App Platform AGENT Package while this repository remains authoritative for durable intelligence semantics and retained EC assets.
