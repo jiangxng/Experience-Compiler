@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "authority": "docs/architecture/LLM-PROACTIVE-ENGINEERING-INSTINCTS-v0.1.md",
+  "reviewModel": "NOW_SOON_WATCH",
+  "reviewTriggers": [
+    "before broad platform expansion",
+    "when the same workaround appears twice",
+    "when CI/context grows with unrelated modules",
+    "when a second consumer needs the same capability",
+    "before declaring a foundation stable",
+    "during periodic clean-room architecture review"
+  ],
+  "project": "Experience-Compiler",
+  "domains": {
+    "persistentKnowledgeMemory": "NOW",
+    "contextCompilation": "NOW",
+    "provenanceEvidence": "NOW",
+    "learningMethodVersioning": "SOON",
+    "modelProviderPortability": "NOW",
+    "evaluationQualityMetrics": "SOON",
+    "privacyScopeGovernance": "SOON",
+    "activeResearchGovernance": "SOON",
+    "knowledgeMigrationDeprecation": "SOON",
+    "observabilityTraceability": "SOON",
+    "packageLifecycle": "DELEGATED_APP_PLATFORM",
+    "humanExperience": "DELEGATED_EIDOS",
+    "llmContextArchitecture": "NOW"
+  }
+}
