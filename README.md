@@ -1,3 +1,5 @@
+> **Current ecosystem:** Experience-Compiler is one of four current owner projects: **EVO-App-Platform / EVO / Eidos / Experience-Compiler**. This repository owns persistent advisory intelligence/knowledge/learning; see `docs/architecture/EC-CURRENT-AUTHORITY-BOUNDARY-v0.1.md` and `docs/architecture/EVO-ECOSYSTEM-PROJECT-BOUNDARIES-v0.1.md`. The old `EVO-EC-Eidos-Convergence` repository is historical evidence only.
+>
 > **Architecture transition (2026-09-23):** The target product identity has changed from **Experience Compiler (EC)** to **Enterprise Agent**, a durable LLM Agent package. Historical EC releases and assets are preserved. See `docs/adr/0004-ec-to-enterprise-agent.md`.
 >
 > **Package convergence (2026-09-24):** this repository remains the durable intelligence asset/runtime source; EVO App Platform owns the installable `enterprise-agent` AGENT Package and lifecycle. See `docs/adr/0005-app-platform-agent-package-convergence.md`.
