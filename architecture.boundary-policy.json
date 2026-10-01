@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "authority": "docs/architecture/EC-CURRENT-AUTHORITY-BOUNDARY-v0.1.md",
+  "repositoryRole": "persistent-advisory-intelligence-and-learning",
+  "coreAdmissionQuestion": "persistent-knowledge-memory-learning-context-research-reasoning-evaluation-or-governed-proposal",
+  "defaults": {
+    "deterministicExecution": "EVO-or-owning-runtime",
+    "platformGovernance": "EVO-App-Platform",
+    "humanExperience": "Eidos",
+    "modelVendor": "PLATFORM_PROVIDER",
+    "externalCompatibility": "Integration-Adapter"
+  },
+  "historyLoading": "on-demand"
+}

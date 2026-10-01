@@ -3,9 +3,13 @@
 Before substantial work, read:
 
 1. `CONSTITUTION.md`
-2. `docs/architecture/LLM-PROACTIVE-ENGINEERING-INSTINCTS-v0.1.md`
-3. `llm.foundation-map.json`
-4. the directly relevant contracts/modules only
+2. `docs/architecture/EC-CURRENT-AUTHORITY-BOUNDARY-v0.1.md`
+3. `docs/architecture/EVO-ECOSYSTEM-PROJECT-BOUNDARIES-v0.1.md`
+4. `docs/architecture/LLM-PROACTIVE-ENGINEERING-INSTINCTS-v0.1.md`
+5. `llm.foundation-map.json`
+6. the directly relevant contracts/modules only
+
+`documentation.policy.json` classifies current authority vs historical evidence. Current architecture may evolve in place; accepted ADR/release/history evidence is preserved and loaded only when rationale, compatibility or archaeology requires it.
 
 ## Mandatory instinct
 
