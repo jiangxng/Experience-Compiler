@@ -13,6 +13,7 @@
     "LLM.md": "CURRENT_AUTHORITY",
     "CONSTITUTION.md": "CURRENT_AUTHORITY",
     "docs/architecture/EC-CURRENT-AUTHORITY-BOUNDARY-v0.1.md": "CURRENT_AUTHORITY",
-    "docs/adr/*": "ADR"
+    "docs/adr/*": "ADR",
+    "docs/architecture/EVO-ECOSYSTEM-PROJECT-BOUNDARIES-v0.1.md": "CURRENT_AUTHORITY"
   }
 }
