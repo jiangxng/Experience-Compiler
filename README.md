@@ -1,8 +1,10 @@
 > **Current ecosystem:** Experience-Compiler is one of four current owner projects: **EVO-App-Platform / EVO / Eidos / Experience-Compiler**. This repository owns persistent advisory intelligence/knowledge/learning; see `docs/architecture/EC-CURRENT-AUTHORITY-BOUNDARY-v0.1.md` and `docs/architecture/EVO-ECOSYSTEM-PROJECT-BOUNDARIES-v0.1.md`. The old `EVO-EC-Eidos-Convergence` repository is historical evidence only.
 >
-> **Architecture transition (2026-09-23):** The target product identity has changed from **Experience Compiler (EC)** to **Enterprise Agent**, a durable LLM Agent package. Historical EC releases and assets are preserved. See `docs/adr/0004-ec-to-enterprise-agent.md`.
+> **Current identity:** **Experience-Compiler remains one of the four independent owner projects** and owns persistent advisory intelligence, knowledge, memory, learning, research and context compilation.
 >
-> **Package convergence (2026-09-24):** this repository remains the durable intelligence asset/runtime source; EVO App Platform owns the installable `enterprise-agent` AGENT Package and lifecycle. See `docs/adr/0005-app-platform-agent-package-convergence.md`.
+> **Enterprise Agent package boundary:** EVO App Platform may expose/install an `enterprise-agent` AGENT Package that integrates EC capabilities, but that package identity does **not** replace the Experience-Compiler project or absorb its durable intelligence ownership.
+>
+> ADR-0004/0005 preserve the historical convergence path. Where their older product-identity wording conflicts with the current four-project authority boundary, the current authority documents win.
 
 > **Windows v1.0.1 quick start:** install Python 3.12 or 3.13, then double-click `START-EC-V1.0.1-WINDOWS.bat`.
 > This patch fixes deterministic SQLite handle release required by Windows temporary-file cleanup.
