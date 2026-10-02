@@ -1,7 +1,9 @@
 # ADR-0004: Experience Compiler transitions to Enterprise Agent
 
-**Status:** Accepted  
+**Status:** Historical Accepted — current product-identity interpretation superseded by the four-project authority boundary  
 **Date:** 2026-09-23
+
+> **Current-authority note (2026-10-02):** This ADR preserves the historical convergence decision. Experience-Compiler is currently an independent owner project for durable advisory intelligence. The `enterprise-agent` identity is an EVO App Platform package/integration boundary and does not replace the Experience-Compiler project. See `docs/architecture/EC-CURRENT-AUTHORITY-BOUNDARY-v0.1.md` and `docs/architecture/EVO-ECOSYSTEM-PROJECT-BOUNDARIES-v0.1.md`.
 
 ## Context
 
