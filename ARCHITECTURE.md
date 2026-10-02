@@ -10,7 +10,7 @@ EC is an **enterprise advisory intelligence layer** around, but not inside, the 
                         Research Plane
                               |
                               v
-EVO Truth ---> Ingestion ---> Knowledge Plane <--- Industry Packs
+Governed Enterprise/Runtime Evidence ---> Ingestion ---> Knowledge Plane <--- Industry Packs
    |                          /    |    \
    |                         /     |     \
    |                   Memory  Learning  Governance
@@ -83,9 +83,9 @@ The normal deterministic enterprise runtime is:
 
 `Human -> Eidos deterministic interaction -> App Platform/Host governance + authorization orchestration -> owned deterministic runtime -> governed enterprise state`
 
-EC may observe and advise around this runtime but is not required for it. If EC/LLMs are unavailable:
+EC may observe governed Enterprise Context definitions and deterministic runtime evidence and advise around this runtime, but is not required for it. If EC/LLMs are unavailable:
 
-- published EVO enterprise definitions remain valid;
+- published Enterprise Context Business Definitions remain valid;
 - authorized platform actions and deterministic runtime operations continue to execute through their owning public contracts;
 - governed facts, ledger state and deterministic derived state remain available according to their owning runtime boundaries;
 - published Eidos experiences continue to render and interact;
