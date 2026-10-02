@@ -92,3 +92,24 @@ Stop and reassess when EC starts to own:
 - UI rendering primitives;
 - one LLM vendor as architectural truth;
 - direct automatic enterprise execution without governed admission.
+
+
+## Project identity vs package integration
+
+Experience-Compiler is a current owner project, not merely an App Platform package implementation detail.
+
+The two identities are intentionally different:
+
+```text
+Experience-Compiler project
+= durable advisory intelligence authority
+  knowledge / memory / learning / research / context / reasoning semantics
+
+EVO App Platform enterprise-agent package
+= installable lifecycle/integration boundary
+  tools / Experience contribution / Provider binding / governed access
+```
+
+The App Platform package may integrate EC capabilities through public contracts. It does not own or replace EC's durable intelligence semantics.
+
+Historical ADR-0004/0005 describe the convergence path. Their older wording about EC product identity is historical context where it conflicts with this current authority boundary.
