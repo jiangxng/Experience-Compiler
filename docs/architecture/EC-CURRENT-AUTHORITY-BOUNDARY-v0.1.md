@@ -113,3 +113,21 @@ EVO App Platform enterprise-agent package
 The App Platform package may integrate EC capabilities through public contracts. It does not own or replace EC's durable intelligence semantics.
 
 Historical ADR-0004/0005 describe the convergence path. Their older wording about EC product identity is historical context where it conflicts with this current authority boundary.
+
+
+## Enterprise evidence wording rule
+
+EC must distinguish definition authority from runtime evidence:
+
+```text
+Enterprise Context
+= governed Business Definition authority
+
+owning deterministic runtimes
+= runtime facts / execution evidence
+
+Experience Compiler
+= advisory intelligence consuming governed evidence
+```
+
+Avoid ambiguous phrases such as `EVO Truth` when the evidence may include Enterprise Context definitions or non-ledger runtime facts. EC may consume both, but owns neither operational truth nor definition publication authority.
