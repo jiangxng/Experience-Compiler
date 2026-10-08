@@ -215,6 +215,8 @@ class ImportMappingExperienceServiceV010:
                 for record in patterns
                 if record.subject == subject
                 and record.predicate == "maps-to-target-field"
+                and record.scope.kind == ScopeKind.TENANT
+                and record.scope.tenant_id == request.tenant_id
                 and isinstance(record.value, dict)
                 and record.value.get("target_id") == request.target_id
                 and record.value.get("target_field_id") in available_targets
