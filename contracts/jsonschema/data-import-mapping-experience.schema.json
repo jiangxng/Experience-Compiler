@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://evo.local/contracts/ec/data-import-mapping-experience/0.1.0",
+  "title": "Data Import Mapping Experience v0.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contractVersion",
+    "tenantId",
+    "targetId",
+    "sourceColumn",
+    "targetFieldId",
+    "sourceHeaders",
+    "importJobId",
+    "targetSchemaDigest",
+    "humanConfirmed",
+    "dryRunPassed",
+    "commitSucceeded",
+    "observedAt"
+  ],
+  "properties": {
+    "contractVersion": { "const": "0.1.0" },
+    "tenantId": { "type": "string", "minLength": 1 },
+    "targetId": { "type": "string", "minLength": 1 },
+    "sourceColumn": { "type": "string", "minLength": 1 },
+    "targetFieldId": { "type": "string", "minLength": 1 },
+    "sourceHeaders": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "importJobId": { "type": "string", "minLength": 1 },
+    "targetSchemaDigest": { "type": "string", "minLength": 1 },
+    "humanConfirmed": { "const": true },
+    "dryRunPassed": { "const": true },
+    "commitSucceeded": { "const": true },
+    "observedAt": { "type": "string", "minLength": 1 },
+    "targetParameters": {
+      "type": ["object", "null"],
+      "additionalProperties": true
+    }
+  }
+}
