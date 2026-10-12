@@ -19,11 +19,13 @@ jobs:
             if(owner!=='jiangxng'||repo!=='Experience-Compiler')throw Error('wrong repo');
             const execute=context.eventName==='push'&&context.ref==='refs/heads/main';
             const main=(await github.rest.git.getRef({owner,repo,ref:'heads/main'})).data.object.sha;
+            const target=execute?main:context.payload.pull_request?.head?.sha;
+            if(!target)throw Error('Missing audit target');
             if(execute&&main!==context.sha)throw Error('main moved since event');
             const targets=[["docs/align-enterprise-agent-boundaries-20260924","a5d86dc4e7666b140193b2c912aec419f096a50c"],["docs/clarify-ec-vs-enterprise-agent-package","9e587bee1cacd641e8164a6140cbfa55e4d1fd05"],["evo/app-platform-agent-package-convergence-v0.1","bb3edbf24bd2084b7e432f81b5bbd21520ebe5db"]];
             const get=async b=>{try{return (await github.rest.git.getRef({owner,repo,ref:'heads/'+b})).data.object.sha;}catch(e){if(e.status===404)return null;throw e;}};
             for(const [branch,sha] of targets){
-             const cmp=(await github.rest.repos.compareCommits({owner,repo,base:sha,head:main})).data;
+             const cmp=(await github.rest.repos.compareCommits({owner,repo,base:sha,head:target})).data;
              if(cmp.behind_by!==0||cmp.merge_base_commit?.sha!==sha)throw Error('unmerged branch '+branch);
              if((await get(branch))!==sha)throw Error('branch moved/absent '+branch);
              const pr=await github.paginate(github.rest.pulls.list,{owner,repo,state:'open',per_page:100});
